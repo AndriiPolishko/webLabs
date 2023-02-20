@@ -1,12 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebLabs</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <script
+      src="https://kit.fontawesome.com/cca79b408e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>WebLabs</title>
+  </head>
+  <body>
+    <header style="position: relative">
+      <h2>Treloo</h2>
+      <nav>
+        <a
+          href="#"
+          class="link"
+          >Review</a
+        >
+        <a
+          href="#"
+          class="link"
+          >Tips</a
+        >
+        <a
+          href="#"
+          class="link"
+          >Alerts</a
+        >
+        <a
+          href="#"
+          class="link"
+          >Blog</a
+        >
+        <button class="button">Blog</button>
+      </nav>
+    </header>
+    <main>
+      <h1>Discover Your Life, Travel Where You Want</h1>
+      <p>
+        Would you explore nature paradise in the world, let's find the best
+        destination in world with us.
+      </p>
+      <div>
+        <i class="fa-solid fa-plane"></i>
+      </div>
+      <div>
+        <i class="fa-solid fa-hotel"></i>
+      </div>
+      <img
+        src="./pictures/headerBackground.jpg"
+        alt="header image"
+      />
+
+      <section class="serch-container">
+        <div class="serch-container__directions">
+          <label for="country-from">Living From</label>
+          <select
+            name="country-from"
+            id="country-from"
+          >
+            <option value="Dubai">Dubai</option>
+          </select>
+          <i class="fa-solid fa-plane"></i>
+          <label for="going-to">Going To</label>
+          <select
+            name="going-to"
+            id="going-to"
+          >
+            <option value="New-York">New-York</option>
+          </select>
+        </div>
+
+        <div class="serch-container__dates">
+          <label for="date-leave">Leave</label>
+          <input
+            type="date"
+            id="date-leave"
+            name="date-leave"
+          />
+          <i class="fa-solid fa-calendar-days"></i>
+          <label for="date-return">Return</label>
+          <input
+            type="date"
+            id="date-return"
+            name="date-return"
+          />
+        </div>
+        <button>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </section>
+      <h2>Special Upcoming Offers</h2>
+      <div class="button-container">
+        <button>Team</button>
+        <button>Couple</button>
+        <button>Family</button>
+      </div>
+      <section class="special-offers-container">
+        <article class="special-offer">
+          <div class="picture-holder">
+            <img
+              src="./pictures/specialUpcomingOffers/beach.png"
+              alt="firstOffer"
+            />
+            <time>14 FEB 2022</time>
+          </div>
+          <div class="offer-description">
+            <p><span>Relax</span> <span>3 Days, 3 Nights</span></p>
+            <p>Loga Sea</p>
+            <p>
+              <span> <span class="price">700$</span>/Person </span>
+              <button>Book Now</button>
+            </p>
+          </div>
+        </article>
+        <article class="special-offer">
+          <div class="picture-holder">
+            <img
+              src="./pictures/specialUpcomingOffers/anotherBeach.jpg"
+              alt="secondOffer"
+            />
+            <time>18 JUN 2022</time>
+          </div>
+          <div class="offer-description">
+            <p><span>Adventure</span> <span>4 Days, 3 Nights</span></p>
+            <p>Ansgar Scheffold</p>
+            <p>
+              <span> <span class="price">400$</span>/Person </span>
+              <button>Book Now</button>
+            </p>
+          </div>
+        </article>
+        <article class="special-offer">
+          <div class="picture-holder">
+            <img
+              src="./pictures/specialUpcomingOffers/mountains.jpg"
+              alt="secondOffer"
+            />
+            <time>22 DEC 2022</time>
+          </div>
+          <div class="offer-description">
+            <p><span>Relax</span> <span>7 Days, 6 Nights</span></p>
+            <p>Lona X</p>
+            <p>
+              <span> <span class="price">340$</span>/Person </span>
+              <button>Book Now</button>
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="about">
+        <div class="picture-block">
+          <img
+            src="./pictures/unsplash.png"
+            alt="dudeLooksAway"
+          />
+          <div><span>300+</span><span>destinations</span></div>
+          <div><span>5000+</span><span>tourists</span></div>
+          <div><span>150+</span><span>hotels</span></div>
+        </div>
+        <div>
+          <h2>Travel Any Corner of The World With Us</h2>
+          <p>
+            Would you explore nature paradise in the world, let’s find the best
+            destination in world with us, Would you explore nature paradise in
+            the world, let’s find the best destination in world with us. Would
+            you explore nature paradise in the world, let’s find the best
+            destination in world with us. Would you explore nature paradise in
+            the world, let’s find the best destination in world with us.
+          </p>
+          <button>Contact Us</button>
+        </div>
+      </section>
+      <section class="recommended-destinations__container">
+        <h2>Recommended Destination</h2>
+        <div class="button-container">
+          <button>Popular</button>
+          <button>Adventure</button>
+          <button>Beath</button>
+        </div>
+        <div class="recommended-destinations__list">
+          <article class="recommended-destination">
+            <div class="picture">
+              <div class="score">3.4</div>
+              <img
+                src="./pictures/recommendedDestinations/mountains.jpg"
+                alt="mountains"
+              />
+            </div>
+            <div class="data">
+              <div class="name">Kina Mountain</div>
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Cambodia</span>
+              </div>
+            </div>
+          </article>
+          <article class="recommended-destination">
+            <div class="picture">
+              <div class="score">4.5</div>
+              <img
+                src="./pictures/recommendedDestinations/mountainFarAway.png"
+                alt="mountains"
+              />
+            </div>
+            <div class="data">
+              <div class="name">Kina Mountain</div>
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Cambodia</span>
+              </div>
+            </div>
+          </article>
+          <article class="recommended-destination">
+            <div class="picture">
+              <div class="score">4.2</div>
+              <img
+                src="./pictures/recommendedDestinations/beachFromAbove.jpg"
+                alt="mountains"
+              />
+            </div>
+            <div class="data">
+              <div class="name">Kina Mountain</div>
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Cambodia</span>
+              </div>
+            </div>
+          </article>
+          <article class="recommended-destination">
+            <div class="picture">
+              <div class="score">3.5</div>
+              <img
+                src="./pictures/recommendedDestinations/mountainFarAway.png"
+                alt="mountains"
+              />
+            </div>
+            <div class="data">
+              <div class="name">Kina Mountain</div>
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Cambodia</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="comments">
+        <article class="comment">
+          <img src="./pictures/1200px-Cquote2_black1.png" alt="quotes">
+          <div>
+            Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.
+          </div>
+          <span>-Vand D</span>
+          <span>Happy Treloo</span>
+          <div class="score">
+            <img src="./pictures/icons/Star.svg" alt="star">
+            <span>4.5</span>
+          </div>
+          <img src="./pictures/comments/Ellipse3.png" alt="happyWoman">
+        </article>
+        <article class="comment">
+          <img src="./pictures/1200px-Cquote2_black1.png" alt="quotes">
+          <div>
+            Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.
+          </div>
+          <span>-Tru Vio</span>
+          <span>Happy Treloo</span>
+          <div class="score">
+            <img src="./pictures/icons/Star.svg" alt="star">
+            <span>4.5</span>
+          </div>
+          <img src="./pictures/comments/Ellipse2.png" alt="happyWoman">
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
