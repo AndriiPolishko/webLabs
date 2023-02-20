@@ -10,14 +10,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <script
-      src="https://kit.fontawesome.com/cca79b408e.js"
-      crossorigin="anonymous"
-    ></script>
     <title>WebLabs</title>
   </head>
   <body>
-    <header style="position: relative">
+    <header>
       <h2>Treloo</h2>
       <nav>
         <a
@@ -44,23 +40,27 @@
       </nav>
     </header>
     <main>
+      <img
+        src="./pictures/headerBackground.jpg"
+        alt="header image"
+      />
       <h1>Discover Your Life, Travel Where You Want</h1>
       <p>
         Would you explore nature paradise in the world, let's find the best
         destination in world with us.
       </p>
-      <div>
-        <i class="fa-solid fa-plane"></i>
-      </div>
-      <div>
-        <i class="fa-solid fa-hotel"></i>
-      </div>
-      <img
-        src="./pictures/headerBackground.jpg"
-        alt="header image"
-      />
 
       <section class="serch-container">
+        <div>
+          <img
+            src="./pictures/icons/AirplaneDiagonal.svg"
+            alt="diagonalBlueAirplane"
+          />
+          <img
+            src="./pictures/icons/Hotel.svg"
+            alt="hotel"
+          />
+        </div>
         <div class="serch-container__directions">
           <label for="country-from">Living From</label>
           <select
@@ -69,7 +69,10 @@
           >
             <option value="Dubai">Dubai</option>
           </select>
-          <i class="fa-solid fa-plane"></i>
+          <img
+            src="./pictures/icons/AirplaneGrayTo.svg"
+            alt="planeTo"
+          />
           <label for="going-to">Going To</label>
           <select
             name="going-to"
@@ -80,14 +83,25 @@
         </div>
 
         <div class="serch-container__dates">
-          <label for="date-leave">Leave</label>
+          <label for="date-leave"
+            >Leave
+            <img
+              src="./pictures/icons/AirplaneTo.svg"
+              alt=""
+          /></label>
+
           <input
             type="date"
             id="date-leave"
             name="date-leave"
           />
-          <i class="fa-solid fa-calendar-days"></i>
-          <label for="date-return">Return</label>
+
+          <label for="date-return"
+            >Return
+            <img
+              src="./pictures/icons/AirplaneBack.svg"
+              alt=""
+          /></label>
           <input
             type="date"
             id="date-return"
@@ -95,7 +109,10 @@
           />
         </div>
         <button>
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <img
+            src="./pictures/icons/magnifyingGlass.png"
+            alt=""
+          />
         </button>
       </section>
       <h2>Special Upcoming Offers</h2>
@@ -111,7 +128,7 @@
               src="./pictures/specialUpcomingOffers/beach.png"
               alt="firstOffer"
             />
-            <time>14 FEB 2022</time>
+            <span>14 FEB 2022</span>
           </div>
           <div class="offer-description">
             <p><span>Relax</span> <span>3 Days, 3 Nights</span></p>
@@ -128,7 +145,7 @@
               src="./pictures/specialUpcomingOffers/anotherBeach.jpg"
               alt="secondOffer"
             />
-            <time>18 JUN 2022</time>
+            <span>18 JUN 2022</span>
           </div>
           <div class="offer-description">
             <p><span>Adventure</span> <span>4 Days, 3 Nights</span></p>
@@ -145,7 +162,7 @@
               src="./pictures/specialUpcomingOffers/mountains.jpg"
               alt="secondOffer"
             />
-            <time>22 DEC 2022</time>
+            <span>22 DEC 2022</span>
           </div>
           <div class="offer-description">
             <p><span>Relax</span> <span>7 Days, 6 Nights</span></p>
@@ -199,7 +216,10 @@
             <div class="data">
               <div class="name">Kina Mountain</div>
               <div class="location">
-                <i class="fa-solid fa-location-dot"></i>
+                <img
+                  src="./pictures/icons/Location.svg"
+                  alt="locationMarker"
+                />
                 <span>Cambodia</span>
               </div>
             </div>
@@ -215,7 +235,10 @@
             <div class="data">
               <div class="name">Kina Mountain</div>
               <div class="location">
-                <i class="fa-solid fa-location-dot"></i>
+                <img
+                  src="./pictures/icons/Location.svg"
+                  alt="locationMarker"
+                />
                 <span>Cambodia</span>
               </div>
             </div>
@@ -231,7 +254,10 @@
             <div class="data">
               <div class="name">Kina Mountain</div>
               <div class="location">
-                <i class="fa-solid fa-location-dot"></i>
+                <img
+                  src="./pictures/icons/Location.svg"
+                  alt="locationMarker"
+                />
                 <span>Cambodia</span>
               </div>
             </div>
@@ -306,13 +332,15 @@
         </article>
       </section>
     </main>
-    <footer>
+    <section class="lowwerBanner">
       <img
         src="./pictures/unsplash_Q1p7bh3SHj8.png"
         alt="theEarth"
       />
       <h2>Don’t Miss The 50% Discount if You register Today</h2>
       <button>Register Today</button>
+    </section>
+    <footer>
       <div>
         <span>© 2022 Treloo LLC - All right reserved.</span>
         <button>Review</button>
