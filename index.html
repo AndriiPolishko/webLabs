@@ -10,12 +10,30 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
     <title>WebLabs</title>
   </head>
+
   <body>
-    <header>
-      <h2>Treloo</h2>
-      <nav>
+    <img
+      src="./pictures/headerBackground.jpg"
+      alt="header image"
+      class="headerBackgroundPicture"
+    />
+    <header class="page-header">
+      <img
+        src="./pictures/icons/Treloo.svg"
+        alt="logo"
+        class="logo"
+      />
+      <nav class="header_nav">
         <a
           href="#"
           class="link"
@@ -39,103 +57,172 @@
         <button class="button">Blog</button>
       </nav>
     </header>
-    <main>
-      <img
-        src="./pictures/headerBackground.jpg"
-        alt="header image"
-      />
-      <h1>Discover Your Life, Travel Where You Want</h1>
-      <p>
-        Would you explore nature paradise in the world, let's find the best
-        destination in world with us.
-      </p>
 
-      <section class="serch-container">
-        <div>
-          <img
-            src="./pictures/icons/AirplaneDiagonal.svg"
-            alt="diagonalBlueAirplane"
-          />
-          <img
-            src="./pictures/icons/Hotel.svg"
-            alt="hotel"
-          />
-        </div>
-        <div class="serch-container__directions">
-          <label for="country-from">Living From</label>
-          <select
-            name="country-from"
-            id="country-from"
-          >
-            <option value="Dubai">Dubai</option>
-          </select>
-          <img
-            src="./pictures/icons/AirplaneGrayTo.svg"
-            alt="planeTo"
-          />
-          <label for="going-to">Going To</label>
-          <select
-            name="going-to"
-            id="going-to"
-          >
-            <option value="New-York">New-York</option>
-          </select>
-        </div>
-
-        <div class="serch-container__dates">
-          <label for="date-leave"
-            >Leave
-            <img
-              src="./pictures/icons/AirplaneTo.svg"
-              alt=""
-          /></label>
-
-          <input
-            type="date"
-            id="date-leave"
-            name="date-leave"
-          />
-
-          <label for="date-return"
-            >Return
-            <img
-              src="./pictures/icons/AirplaneBack.svg"
-              alt=""
-          /></label>
-          <input
-            type="date"
-            id="date-return"
-            name="date-return"
-          />
-        </div>
-        <button>
-          <img
-            src="./pictures/icons/magnifyingGlass.png"
-            alt=""
-          />
-        </button>
-      </section>
-      <h2>Special Upcoming Offers</h2>
-      <div class="button-container">
-        <button>Team</button>
-        <button>Couple</button>
-        <button>Family</button>
+    <main class="page-main">
+      <div class="text-banner__container">
+        <h1 class="text-banner">Discover Your Life, Travel</h1>
+        <h1 class="text-banner">Where You Want</h1>
       </div>
+
+      <div class="slogan__container">
+        <p>
+          Would you explore nature paradise in the world, let's find the best
+        </p>
+        <p>destination in world with us.</p>
+      </div>
+
+      <section class="search-container">
+        <div class="outer-upper-container">
+          <div class="upper-container">
+            <div class="tab">
+              <img
+                src="./pictures/icons/AirplaneDiagonal.svg"
+                alt="diagonalBlueAirplane"
+                class="icon"
+              />
+              <span class="small-text">Fight</span>
+            </div>
+            <div class="tab">
+              <img
+                src="./pictures/icons/Hotel.svg"
+                alt="hotel"
+                class="icon"
+              />
+              <span class="small-text">Fight</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-container__main">
+          <div class="search-container__directions">
+            <div class="select-container">
+              <label
+                for="country-from"
+                class="label"
+                >Living From</label
+              >
+              <select
+                name="country-from"
+                id="country-from"
+              >
+                <option value="Dubai">Dubai</option>
+              </select>
+            </div>
+            <div class="dashed-circle">
+              <img
+                src="./pictures/icons/AirplaneGrayTo.svg"
+                alt="planeTo"
+                class="icon"
+              />
+            </div>
+
+            <div class="select-container">
+              <label
+                for="going-to"
+                class="label"
+                >Going To</label
+              >
+              <select
+                name="going-to"
+                id="going-to"
+              >
+                <option value="New-York">New-York</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="search-container__dates">
+            <div class="select-container">
+              <label
+                for="date-leave"
+                class="label"
+                >Leave
+                <img
+                  src="./pictures/icons/AirplaneTo.svg"
+                  alt="airplane"
+                />
+              </label>
+
+              <input
+                type="date"
+                name="begin"
+                placeholder="dd-mm-yyyy"
+                value=""
+                min="1997-01-01"
+                max="2030-12-31"
+                class="date-picker"
+              />
+            </div>
+            <div class="dashed-circle">
+              <img
+                src="./pictures/icons/Planner.svg"
+                alt="planner"
+              />
+            </div>
+            <div class="select-container">
+              <label
+                for="date-return"
+                class="label"
+                >Return
+                <img
+                  src="./pictures/icons/AirplaneBack.svg"
+                  alt="airplane"
+                />
+              </label>
+
+              <input
+                type="date"
+                name="begin"
+                placeholder="dd-mm-yyyy"
+                value=""
+                min="1997-01-01"
+                max="2030-12-31"
+                class="date-picker"
+              />
+            </div>
+          </div>
+          <button class="search__button">
+            <img
+              src="./pictures/icons/magnifyingGlass.png"
+              alt="magnifyingGlass"
+              class="magnifying-glass"
+            />
+          </button>
+        </div>
+      </section>
+
+      <h2 class="ad-heading">Special Upcoming Offers</h2>
+      <div class="button-container">
+        <button class="button-tab">Team</button>
+        <button class="button-tab">Couple</button>
+        <button class="button-tab">Family</button>
+      </div>
+
       <section class="special-offers-container">
         <article class="special-offer">
           <div class="picture-holder">
             <img
               src="./pictures/specialUpcomingOffers/beach.png"
               alt="firstOffer"
+              class="offer-picture"
             />
-            <span>14 FEB 2022</span>
+            <!-- <p class="rotated">14 FEB 2022</p> -->
+            <img
+              src="./pictures//dates/14_FEB_2022.svg"
+              alt="14_FEB_2022"
+              class="date-img"
+            />
           </div>
           <div class="offer-description">
-            <p><span>Relax</span> <span>3 Days, 3 Nights</span></p>
-            <p>Loga Sea</p>
+            <div class="offer-type">
+              <div class="offer-type__name">Relax</div>
+              <span class="offer-type__days">3 Days, 3 Nights</span>
+            </div>
+            <p class="offer-name">Loga Sea</p>
             <p>
-              <span> <span class="price">700$</span>/Person </span>
-              <button>Book Now</button>
+              <span class="offer-price">700$</span>
+              <span class="default-small-gray-text">/Person</span>
+              <button class="book-button">Book Now</button>
             </p>
           </div>
         </article>
@@ -144,15 +231,25 @@
             <img
               src="./pictures/specialUpcomingOffers/anotherBeach.jpg"
               alt="secondOffer"
+              class="offer-picture"
             />
-            <span>18 JUN 2022</span>
+            <!-- <p class="rotated">18 JUN 2022</p> -->
+            <img
+              src="./pictures//dates/18_JUN_2022.svg"
+              alt="18 JUN 2022"
+              class="date-img"
+            />
           </div>
           <div class="offer-description">
-            <p><span>Adventure</span> <span>4 Days, 3 Nights</span></p>
-            <p>Ansgar Scheffold</p>
+            <div class="offer-type">
+              <div class="offer-type__name adventure">Adventure</div>
+              <span class="offer-type__days">4 Days, 3 Nights</span>
+            </div>
+            <p class="offer-name">Ansgar Scheffold</p>
             <p>
-              <span> <span class="price">400$</span>/Person </span>
-              <button>Book Now</button>
+              <span class="offer-price">400$</span>
+              <span class="default-small-gray-text">/Person</span>
+              <button class="book-button">Book Now</button>
             </p>
           </div>
         </article>
@@ -161,15 +258,26 @@
             <img
               src="./pictures/specialUpcomingOffers/mountains.jpg"
               alt="secondOffer"
+              class="offer-picture"
             />
-            <span>22 DEC 2022</span>
+            <!-- <p class="rotated">22 DEC 2022</p> -->
+            <img
+              src="./pictures//dates/22_DEC_2022.svg"
+              alt="22 DEC 2022"
+              class="date-img"
+            />
           </div>
           <div class="offer-description">
-            <p><span>Relax</span> <span>7 Days, 6 Nights</span></p>
-            <p>Lona X</p>
+            <div class="offer-type">
+              <div class="offer-type__name">Relax</div>
+              <span class="offer-type__days">7 Days, 6 Nights</span>
+            </div>
+
+            <p class="offer-name">Lona X</p>
             <p>
-              <span> <span class="price">340$</span>/Person </span>
-              <button>Book Now</button>
+              <span class="offer-price">340$</span>
+              <span class="default-small-gray-text">/Person</span>
+              <button class="book-button">Book Now</button>
             </p>
           </div>
         </article>
@@ -332,10 +440,11 @@
         </article>
       </section>
     </main>
-    <section class="lowwerBanner">
+    <section class="lowerBanner">
       <img
         src="./pictures/unsplash_Q1p7bh3SHj8.png"
         alt="theEarth"
+        class="bottom-picture"
       />
       <h2>Don’t Miss The 50% Discount if You register Today</h2>
       <button>Register Today</button>
