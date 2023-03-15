@@ -667,4 +667,18 @@ h2 {
   margin-right: 20px;
 }
 
-.page-footer {}
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 130px;
+}
+
+.button-footer {
+  all: unset;
+  border: none;
+  background-color: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin-left: 50px;
+}
