@@ -28,11 +28,13 @@
       class="headerBackgroundPicture"
     />
     <header class="page-header">
-      <img
-        src="./pictures/icons/Treloo.svg"
-        alt="logo"
-        class="logo"
-      />
+      <a href="#">
+        <img
+          src="./pictures/icons/Treloo.svg"
+          alt="logo"
+          class="logo"
+        />
+      </a>
       <nav class="header_nav">
         <a
           href="#"
@@ -206,12 +208,7 @@
               alt="firstOffer"
               class="offer-picture"
             />
-            <!-- <p class="rotated">14 FEB 2022</p> -->
-            <img
-              src="./pictures//dates/14_FEB_2022.svg"
-              alt="14_FEB_2022"
-              class="date-img"
-            />
+            <p class="rotated">14 FEB 2022</p>
           </div>
           <div class="offer-description">
             <div class="offer-type">
@@ -233,12 +230,7 @@
               alt="secondOffer"
               class="offer-picture"
             />
-            <!-- <p class="rotated">18 JUN 2022</p> -->
-            <img
-              src="./pictures//dates/18_JUN_2022.svg"
-              alt="18 JUN 2022"
-              class="date-img"
-            />
+            <p class="rotated">18 JUN 2022</p>
           </div>
           <div class="offer-description">
             <div class="offer-type">
@@ -260,12 +252,7 @@
               alt="secondOffer"
               class="offer-picture"
             />
-            <!-- <p class="rotated">22 DEC 2022</p> -->
-            <img
-              src="./pictures//dates/22_DEC_2022.svg"
-              alt="22 DEC 2022"
-              class="date-img"
-            />
+            <p class="rotated">22 DEC 2022</p>
           </div>
           <div class="offer-description">
             <div class="offer-type">
@@ -282,107 +269,180 @@
           </div>
         </article>
       </section>
+
       <section class="about">
-        <div class="picture-block">
+        <div class="about__picture-block">
           <img
             src="./pictures/unsplash.png"
             alt="dudeLooksAway"
+            class="dudeLooksAway"
           />
-          <div><span>300+</span><span>destinations</span></div>
-          <div><span>5000+</span><span>tourists</span></div>
-          <div><span>150+</span><span>hotels</span></div>
+          <div
+            class="description-bubble"
+            id="description-bubble-1"
+          >
+            <p class="description-bubble__number">300+</p>
+            <p class="description-bubble__text">destinations</p>
+          </div>
+          <div
+            class="description-bubble"
+            id="description-bubble-2"
+          >
+            <p class="description-bubble__number">5000+</p>
+            <p class="description-bubble__text">tourists</p>
+          </div>
+          <div
+            class="description-bubble"
+            id="description-bubble-3"
+          >
+            <p class="description-bubble__number">150+</p>
+            <p class="description-bubble__text">hotels</p>
+          </div>
         </div>
-        <div>
-          <h2>Travel Any Corner of The World With Us</h2>
-          <p>
-            Would you explore nature paradise in the world, let’s find the best
+
+        <div class="about__text-block">
+          <h2>Travel Any Corner of</h2>
+          <h2>The World With Us</h2>
+          <p class="questions">
+            Would you explore nature paradise in the world, let's find the best
             destination in world with us, Would you explore nature paradise in
-            the world, let’s find the best destination in world with us. Would
-            you explore nature paradise in the world, let’s find the best
-            destination in world with us. Would you explore nature paradise in
-            the world, let’s find the best destination in world with us.
+            the world, let's find the best destination in world with us. Would
+            you explore nature paradise in the world, let's find the best
+            destination in world with us.
           </p>
-          <button>Contact Us</button>
+          <p class="questions">
+            Would you explore nature paradise in the world, let's find the best
+            destination in world with us.
+          </p>
+          <button class="contactUsButton">Contact Us</button>
         </div>
       </section>
+
       <section class="recommended-destinations__container">
         <h2>Recommended Destination</h2>
-        <div class="button-container">
-          <button>Popular</button>
-          <button>Adventure</button>
-          <button>Beath</button>
+        <div class="destination-type-container">
+          <button class="destination-type">Popular</button>
+          <button class="destination-type">Adventure</button>
+          <button class="destination-type">Beath</button>
         </div>
         <div class="recommended-destinations__list">
           <article class="recommended-destination">
-            <div class="picture">
-              <div class="score">3.4</div>
+            <div class="recommended-destination__picture-container">
+              <div class="recommended-destination__score-container">
+                <div class="recommended-destination__score">
+                  <img
+                    src="./pictures/icons/Star.svg"
+                    alt="star"
+                  />
+                  <span class="recommended-destination__score-number">
+                    3.4
+                  </span>
+                </div>
+              </div>
               <img
                 src="./pictures/recommendedDestinations/mountains.jpg"
                 alt="mountains"
+                class="recommended-destination__picture"
               />
             </div>
-            <div class="data">
-              <div class="name">Kina Mountain</div>
+            <div class="recommended-destination__data">
+              <div class="small-bald-text">Kina Mountain</div>
               <div class="location">
                 <img
                   src="./pictures/icons/Location.svg"
                   alt="locationMarker"
                 />
-                <span>Cambodia</span>
+                <span class="small-thin-text">Cambodia</span>
               </div>
             </div>
           </article>
           <article class="recommended-destination">
-            <div class="picture">
-              <div class="score">4.5</div>
+            <div class="recommended-destination__picture-container">
+              <div class="recommended-destination__score-container">
+                <div class="recommended-destination__score">
+                  <img
+                    src="./pictures/icons/Star.svg"
+                    alt="star"
+                  />
+                  <span class="recommended-destination__score-number">
+                    4.5
+                  </span>
+                </div>
+              </div>
               <img
                 src="./pictures/recommendedDestinations/mountainFarAway.png"
                 alt="mountains"
+                class="recommended-destination__picture"
               />
             </div>
-            <div class="data">
-              <div class="name">Kina Mountain</div>
+            <div class="recommended-destination__data">
+              <div class="small-bald-text">Kina Mountain</div>
               <div class="location">
                 <img
                   src="./pictures/icons/Location.svg"
                   alt="locationMarker"
                 />
-                <span>Cambodia</span>
+                <span class="small-thin-text">Cambodia</span>
               </div>
             </div>
           </article>
           <article class="recommended-destination">
-            <div class="picture">
-              <div class="score">4.2</div>
+            <div class="recommended-destination__picture-container">
+              <div class="recommended-destination__score-container">
+                <div class="recommended-destination__score">
+                  <img
+                    src="./pictures/icons/Star.svg"
+                    alt="star"
+                  />
+                  <span class="recommended-destination__score-number">
+                    4.2
+                  </span>
+                </div>
+              </div>
               <img
                 src="./pictures/recommendedDestinations/beachFromAbove.jpg"
                 alt="mountains"
+                class="recommended-destination__picture"
               />
             </div>
-            <div class="data">
-              <div class="name">Kina Mountain</div>
+            <div class="recommended-destination__data">
+              <div class="small-bald-text">Kina Mountain</div>
               <div class="location">
                 <img
                   src="./pictures/icons/Location.svg"
                   alt="locationMarker"
                 />
-                <span>Cambodia</span>
+                <span class="small-thin-text">Cambodia</span>
               </div>
             </div>
           </article>
           <article class="recommended-destination">
-            <div class="picture">
-              <div class="score">3.5</div>
+            <div class="recommended-destination__picture-container">
+              <div class="recommended-destination__score-container">
+                <div class="recommended-destination__score">
+                  <img
+                    src="./pictures/icons/Star.svg"
+                    alt="star"
+                  />
+                  <span class="recommended-destination__score-number">
+                    3.5
+                  </span>
+                </div>
+              </div>
               <img
-                src="./pictures/recommendedDestinations/mountainFarAway.png"
+                src="./pictures/recommendedDestinations/palms.png"
                 alt="mountains"
+                class="recommended-destination__picture"
               />
             </div>
-            <div class="data">
-              <div class="name">Kina Mountain</div>
+            <div class="recommended-destination__data">
+              <div class="small-bald-text">Kina Mountain</div>
               <div class="location">
-                <i class="fa-solid fa-location-dot"></i>
-                <span>Cambodia</span>
+                <img
+                  src="./pictures/icons/Location.svg"
+                  alt=""
+                />
+                <span class="small-thin-text">Cambodia</span>
               </div>
             </div>
           </article>
@@ -394,49 +454,59 @@
           <img
             src="./pictures/1200px-Cquote2_black1.png"
             alt="quotes"
+            class="quotes"
           />
-          <div>
+          <div class="comment__text">
             Our trip to Morocco was truly a onece in a lifetime experience and
             we are so grateful to everyone that made it happen seamlessly. Our
             travel planner, Jaouad, was increadible.
           </div>
-          <span>-Vand D</span>
-          <span>Happy Treloo</span>
-          <div class="score">
+          <span class="comment__author-name">-Vand D</span>
+          <span class="happy-treloo">Happy Treloo</span>
+
+          <div class="white-ellipse">
+            <div class="score">
+              <img
+                src="./pictures/icons/Star.svg"
+                alt="star"
+                class="star"
+              />
+              <p>4.5</p>
+            </div>
             <img
-              src="./pictures/icons/Star.svg"
-              alt="star"
+              src="./pictures/comments/Ellipse3.png"
+              alt="happyWoman"
+              class="author-photo"
             />
-            <span>4.5</span>
           </div>
-          <img
-            src="./pictures/comments/Ellipse3.png"
-            alt="happyWoman"
-          />
         </article>
         <article class="comment">
           <img
             src="./pictures/1200px-Cquote2_black1.png"
             alt="quotes"
+            class="quotes"
           />
-          <div>
+          <div class="comment__text">
             Our trip to Morocco was truly a onece in a lifetime experience and
             we are so grateful to everyone that made it happen seamlessly. Our
             travel planner, Jaouad, was increadible.
           </div>
-          <span>-Tru Vio</span>
-          <span>Happy Treloo</span>
-          <div class="score">
+          <span class="comment__author-name">-Tru Vio</span>
+          <span class="happy-treloo">Happy Treloo</span>
+          <div class="white-ellipse">
+            <div class="score">
+              <img
+                src="./pictures/icons/Star.svg"
+                alt="star"
+                class="star"
+              />
+              <span>4.5</span>
+            </div>
             <img
-              src="./pictures/icons/Star.svg"
-              alt="star"
+              src="./pictures/comments/Ellipse2.png"
+              alt="happyMan"
             />
-            <span>4.5</span>
           </div>
-          <img
-            src="./pictures/comments/Ellipse2.png"
-            alt="happyWoman"
-          />
         </article>
       </section>
     </main>
@@ -446,7 +516,7 @@
         alt="theEarth"
         class="bottom-picture"
       />
-      <h2>Don’t Miss The 50% Discount if You register Today</h2>
+      <h2>Don't Miss The 50% Discount if You register Today</h2>
       <button>Register Today</button>
     </section>
     <footer>
